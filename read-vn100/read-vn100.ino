@@ -42,14 +42,6 @@ union {unsigned short s; byte b[2];} checksum;
 bool imu_sync_detected = false;  // check if the sync byte (0xFA) is detected
 byte in[100];  // array to save data send from the IMU
 
-// IMU configuration
-// $VNASY,0*XX
-// $VNWRG,06,0*XX
-// $VNWRG,75,2,8,01,0128*XX
-// $VNCMD*XX
-// system save
-// exit
-// $VNASY,1*XX
 
 void setup() {
 
